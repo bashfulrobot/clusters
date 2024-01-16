@@ -27,15 +27,17 @@ kvm_subnet_prefix = "10.10.0"
 vm_count = 1
 # Number of vCPUs to assign to each VM
 vm_vcpu = 4
-# Amount of memory to assign to each VM
-vm_memory = 8192
+# Amount of memory to assign to each VM in GB
+vm_memory = 8
 # Size of the OS disk in GB
 vm_os_disk_size = 100
 
 # How many Data VMs to create
+datavm_count = 3
+# How many Data VMs to create
 datavm_vcpu = 4
-# Amount of memory to assign to each Data VM
-datavm_memory = 8192
+# Amount of memory to assign to each Data VM in GB
+datavm_memory = 8
 # Size of the OS disk in GB
 datavm_os_disk_size = 100
 # Size of the Data disk in GB
