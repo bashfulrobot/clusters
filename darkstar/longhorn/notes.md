@@ -24,5 +24,5 @@ USER=<USERNAME_HERE>; PASSWORD=<PASSWORD_HERE>; echo "${USER}:$(openssl passwd -
 
 kubectl -n longhorn-system create secret generic basic-auth --from-file=auth
 
-kubectl -n longhorn-system apply -f longhorn-ingress.yml
+kubectl -n longhorn-system apply -f longhorn-ingress.yaml
 ```
