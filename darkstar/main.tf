@@ -9,8 +9,8 @@ module "network" {
 
 }
 
-module "vm" {
-  source = "github.com/bashfulrobot/libvirt-module-vm"
+module "cp" {
+  source = "github.com/bashfulrobot/libvirt-module-rke2-cp"
 
   #### User Variables
   admin_name             = var.admin_name
@@ -39,8 +39,8 @@ module "vm" {
 
 }
 
-module "datavm" {
-  source = "github.com/bashfulrobot/libvirt-module-datavm"
+module "worker" {
+  source = "github.com/bashfulrobot/libvirt-module-rke2-worker"
 
   #### User Variables
   admin_name             = var.admin_name
