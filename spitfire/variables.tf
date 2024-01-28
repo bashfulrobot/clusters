@@ -36,11 +36,11 @@ variable "datavm_host_suffix" {
 
 variable "kvm_subnet" {
   type    = string
-  default = "10.20.0.0/24"
+  default = "172.16.0.0/24"
 }
 variable "kvm_subnet_prefix" {
   type    = string
-  default = "10.20.0"
+  default = "172.16.0"
 }
 
 #### VM Variables
