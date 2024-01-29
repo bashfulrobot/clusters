@@ -8,19 +8,19 @@ path_to_ssh_public_key = "~/.ssh/id_ed25519.pub"
 
 #### Cluster/Host Variables
 # Cluster Name
-cluster_name = "spitfire"
+cluster_name = "sptifire"
 # Cluster Host Prefix
-host_prefix = "spitfire"
+host_prefix = "sptifire"
 # Cluster VM Host Suffix
-vm_host_suffix = "-commander"
+vm_host_suffix = "-cmdr"
 # Cluster Data VM Host Suffix
-datavm_host_suffix = "-grunt"
+datavm_host_suffix = "-gi"
 
 #### Network Variables
 # Network Subnet - Should be a /24
-kvm_subnet = "10.100.0.0/24"
+kvm_subnet = "10.20.0.0/24"
 # Network Subnet Prefix - Should be the same as kvm_subnet first three octets
-kvm_subnet_prefix = "10.100.0"
+kvm_subnet_prefix = "10.20.0"
 
 #### VM Variables
 # How many VMs to create
