@@ -10,7 +10,7 @@ module "network" {
 }
 
 module "cp" {
-  source = "github.com/bashfulrobot/libvirt-module-rke2-cp"
+  source = "github.com/bashfulrobot/libvirt-module-kubeadm-cp"
 
   #### User Variables
   admin_name             = var.admin_name
@@ -40,7 +40,7 @@ module "cp" {
 }
 
 module "worker" {
-  source = "github.com/bashfulrobot/libvirt-module-rke2-worker"
+  source = "github.com/bashfulrobot/libvirt-module-kubeadm-worker"
 
   #### User Variables
   admin_name             = var.admin_name

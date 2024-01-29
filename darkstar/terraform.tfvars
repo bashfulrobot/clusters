@@ -9,12 +9,6 @@ path_to_ssh_public_key = "~/.ssh/id_ed25519.pub"
 #### Cluster/Host Variables
 # Cluster Name
 cluster_name = "darkstar"
-# Cluster Host Prefix
-host_prefix = "darkstar"
-# Cluster VM Host Suffix
-vm_host_suffix = "-overlord"
-# Cluster Data VM Host Suffix
-datavm_host_suffix = "-minion"
 
 #### Network Variables
 # Network Subnet - Should be a /24
