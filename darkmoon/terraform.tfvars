@@ -18,9 +18,9 @@ datavm_host_suffix = "-eventhorizon"
 
 #### Network Variables
 # Network Subnet - Should be a /24
-kvm_subnet = "10.40.0.0/24"
+kvm_subnet = "10.50.0.0/24"
 # Network Subnet Prefix - Should be the same as kvm_subnet first three octets
-kvm_subnet_prefix = "10.40.0"
+kvm_subnet_prefix = "10.50.0"
 
 #### VM Variables
 # How many VMs to create
