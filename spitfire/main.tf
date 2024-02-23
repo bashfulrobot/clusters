@@ -4,7 +4,7 @@ module "network" {
 
   #### Network Variables
   kvm_subnet        = var.kvm_subnet
-  kvm_subnet_prefix = var.kvm_subnet_prefix
+  # kvm_subnet_prefix = var.kvm_subnet_prefix
   network_name      = var.cluster_name
 
 }
@@ -26,6 +26,8 @@ module "cp" {
   network_domain    = module.network.network_domain
   network_id        = module.network.network_id
   kvm_subnet_prefix = var.kvm_subnet_prefix
+  cni_cilium = var.cni_cilium
+  cni_calico = var.cni_calico
 
   #### VM Variables
   vm_vcpu         = var.vm_vcpu

@@ -42,6 +42,14 @@ variable "kvm_subnet_prefix" {
   type    = string
   default = "172.16.0"
 }
+variable "cni_cilium" {
+  type = bool
+  default = false
+}
+variable "cni_calico" {
+  type = bool
+  default = false
+}
 
 #### VM Variables
 variable "vm_vcpu" {
