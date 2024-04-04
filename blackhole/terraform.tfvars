@@ -18,9 +18,9 @@ datavm_host_suffix = "-eventhorizon"
 
 #### Network Variables
 # Network Subnet - Should be a /24
-kvm_subnet = "10.20.0.0/24"
+kvm_subnet = "172.200.0.0/24"
 # Network Subnet Prefix - Should be the same as kvm_subnet first three octets
-kvm_subnet_prefix = "10.20.0"
+kvm_subnet_prefix = "172.200.0"
 
 #### VM Variables
 # How many VMs to create
@@ -45,6 +45,6 @@ datavm_disk_size = 160
 
 #### Libvirt Variables
 # Ubuntu Cloud Image URL location
-image_url = "file:///var/lib/libvirt/images/jammy-server-cloudimg-amd64-disk-kvm.img"
+image_url = "file:///var/lib/libvirt/images/debian-12-genericcloud-amd64-daily.qcow2"
 # Auto start VMs on boot
 autostart = true

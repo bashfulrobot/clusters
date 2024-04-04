@@ -4,13 +4,13 @@ module "network" {
 
   #### Network Variables
   kvm_subnet        = var.kvm_subnet
-  kvm_subnet_prefix = var.kvm_subnet_prefix
+  # kvm_subnet_prefix = var.kvm_subnet_prefix
   network_name      = var.cluster_name
 
 }
 
 module "cp" {
-  source = "github.com/bashfulrobot/libvirt-module-kubeadm-cp"
+  source = "github.com/bashfulrobot/libvirt-module-vm"
 
   #### User Variables
   admin_name             = var.admin_name
@@ -40,7 +40,7 @@ module "cp" {
 }
 
 module "worker" {
-  source = "github.com/bashfulrobot/libvirt-module-kubeadm-worker"
+  source = "github.com/bashfulrobot/libvirt-module-datavm"
 
   #### User Variables
   admin_name             = var.admin_name
