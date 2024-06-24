@@ -8,27 +8,25 @@ path_to_ssh_public_key = "~/.ssh/id_ed25519.pub"
 
 #### Cluster/Host Variables
 # Cluster Name
-cluster_name = "darkstar"
+cluster_name = "blackhole"
 # Cluster Host Prefix
-host_prefix = "darkstar"
+host_prefix = "blackhole"
 # Cluster VM Host Suffix
-vm_host_suffix = "-singularity"
+vm_host_suffix = "-sun"
 # Cluster Data VM Host Suffix
-datavm_host_suffix = "-nebula"
+datavm_host_suffix = "-moon"
 
 #### Network Variables
 # Network Subnet - Should be a /24
-kvm_subnet = "172.16.200.0/24"
+kvm_subnet = "172.16.150.0/24"
 # Network Subnet Prefix - Should be the same as kvm_subnet first three octets
-kvm_subnet_prefix = "172.16.200"
+kvm_subnet_prefix = "172.16.150"
 cni_cilium = true
 # set a route network mode
 network_mode = "route"
 # network_mode = "nat"
 # network_mode = "bridge"
 
-# NOTE - before building, you must allow this interface to be used in the host routing config.
-kvm_bridge = "virbr200"
 #### VM Variables
 # How many VMs to create
 vm_count = 1
