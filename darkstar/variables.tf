@@ -55,6 +55,11 @@ variable "network_mode" {
   default = "nat"
 }
 
+variable "kvm_bridge" {
+  type    = string
+  default = "virbr10"
+}
+
 #### VM Variables
 variable "vm_vcpu" {
   description = "The number of virtual CPUs for the controller nodes"

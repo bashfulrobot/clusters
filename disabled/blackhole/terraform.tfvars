@@ -8,24 +8,27 @@ path_to_ssh_public_key = "~/.ssh/id_ed25519.pub"
 
 #### Cluster/Host Variables
 # Cluster Name
-cluster_name = "spitfire"
+cluster_name = "darkstar"
 # Cluster Host Prefix
-host_prefix = "spitfire"
+host_prefix = "darkstar"
 # Cluster VM Host Suffix
-vm_host_suffix = "-cmdr"
+vm_host_suffix = "-singularity"
 # Cluster Data VM Host Suffix
-datavm_host_suffix = "-gi"
+datavm_host_suffix = "-nebula"
 
 #### Network Variables
 # Network Subnet - Should be a /24
-kvm_subnet = "172.16.0.0/24"
+kvm_subnet = "172.16.200.0/24"
 # Network Subnet Prefix - Should be the same as kvm_subnet first three octets
-kvm_subnet_prefix = "172.16.0"
+kvm_subnet_prefix = "172.16.200"
 cni_cilium = true
 # set a route network mode
-# network_mode = "route"
-network_mode = "nat"
+network_mode = "route"
+# network_mode = "nat"
 # network_mode = "bridge"
+
+# NOTE - before building, you must allow this interface to be used in the host routing config.
+kvm_bridge = "virbr200"
 #### VM Variables
 # How many VMs to create
 vm_count = 1
@@ -37,7 +40,7 @@ vm_memory = 8
 vm_os_disk_size = 100
 
 # How many Data VMs to create
-datavm_count = 3
+datavm_count = 2
 # How many Data VMs to create
 datavm_vcpu = 4
 # Amount of memory to assign to each Data VM in GB

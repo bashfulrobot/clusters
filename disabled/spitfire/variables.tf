@@ -36,11 +36,11 @@ variable "datavm_host_suffix" {
 
 variable "kvm_subnet" {
   type    = string
-  default = "172.16.0.0/24"
+  default = "172.16.20.0/24"
 }
 variable "kvm_subnet_prefix" {
   type    = string
-  default = "172.16.0"
+  default = "172.16.20"
 }
 variable "cni_cilium" {
   type = bool
@@ -53,6 +53,11 @@ variable "cni_calico" {
 variable "network_mode" {
   type = string
   default = "nat"
+}
+
+variable "kvm_bridge" {
+  type    = string
+  default = "virbr10"
 }
 
 #### VM Variables

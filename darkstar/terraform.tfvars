@@ -23,9 +23,12 @@ kvm_subnet = "172.16.200.0/24"
 kvm_subnet_prefix = "172.16.200"
 cni_cilium = true
 # set a route network mode
-network_mode = "routed"
+network_mode = "route"
 # network_mode = "nat"
 # network_mode = "bridge"
+
+# NOTE - before building, you must allow this interface to be used in the host routing config.
+kvm_bridge = "virbr200"
 #### VM Variables
 # How many VMs to create
 vm_count = 1
