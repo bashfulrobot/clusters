@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: longhorn-ingress
+  namespace: longhorn-system
+  labels:
+    cilium-lb: "true"
+  annotations:
+    cert-manager.io/issuer: "letsencrypt-prod" # matches the name of the issuer in the NS
+spec:
+  ingressClassName: cilium
+  rules:
+    - host: lh-darkstar.srvrs.co
+      http:
+        paths:
+        - backend:
+            service:
+              name: longhorn-frontend
+              port:
+                number: 80
+          path: /
+          pathType: Prefix
+  tls:
+    - hosts:
+      - lh-darkstar.srvrs.co
+      secretName: lh-darkstar-srvrs-co-tls
