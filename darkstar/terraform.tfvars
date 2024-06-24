@@ -12,16 +12,20 @@ cluster_name = "darkstar"
 # Cluster Host Prefix
 host_prefix = "darkstar"
 # Cluster VM Host Suffix
-vm_host_suffix = "-overlord"
+vm_host_suffix = "-singularity"
 # Cluster Data VM Host Suffix
-datavm_host_suffix = "-minion"
+datavm_host_suffix = "-nebula"
 
 #### Network Variables
 # Network Subnet - Should be a /24
-kvm_subnet = "10.10.0.0/24"
+kvm_subnet = "172.16.200.0/24"
 # Network Subnet Prefix - Should be the same as kvm_subnet first three octets
-kvm_subnet_prefix = "10.10.0"
-
+kvm_subnet_prefix = "172.16.200"
+cni_cilium = true
+# set a route network mode
+network_mode = "routed"
+# network_mode = "nat"
+# network_mode = "bridge"
 #### VM Variables
 # How many VMs to create
 vm_count = 1
@@ -33,7 +37,7 @@ vm_memory = 8
 vm_os_disk_size = 100
 
 # How many Data VMs to create
-datavm_count = 3
+datavm_count = 2
 # How many Data VMs to create
 datavm_vcpu = 4
 # Amount of memory to assign to each Data VM in GB
@@ -45,6 +49,6 @@ datavm_disk_size = 160
 
 #### Libvirt Variables
 # Ubuntu Cloud Image URL location
-image_url = "file:///var/lib/libvirt/images/jammy-server-cloudimg-amd64-disk-kvm.img"
+image_url = "file:///var/lib/libvirt/images/noble-server-cloudimg-amd64.img"
 # Auto start VMs on boot
 autostart = true

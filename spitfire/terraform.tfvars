@@ -22,7 +22,10 @@ kvm_subnet = "172.16.0.0/24"
 # Network Subnet Prefix - Should be the same as kvm_subnet first three octets
 kvm_subnet_prefix = "172.16.0"
 cni_cilium = true
-
+# set a route network mode
+# network_mode = "route"
+network_mode = "nat"
+# network_mode = "bridge"
 #### VM Variables
 # How many VMs to create
 vm_count = 1
@@ -46,6 +49,6 @@ datavm_disk_size = 160
 
 #### Libvirt Variables
 # Ubuntu Cloud Image URL location
-image_url = "file:///var/lib/libvirt/images/jammy-server-cloudimg-amd64-disk-kvm.img"
+image_url = "file:///var/lib/libvirt/images/noble-server-cloudimg-amd64.img"
 # Auto start VMs on boot
 autostart = true

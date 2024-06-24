@@ -12,16 +12,21 @@ cluster_name = "blackhole"
 # Cluster Host Prefix
 host_prefix = "blackhole"
 # Cluster VM Host Suffix
-vm_host_suffix = "-singularity"
+vm_host_suffix = "-sun"
 # Cluster Data VM Host Suffix
-datavm_host_suffix = "-eventhorizon"
+datavm_host_suffix = "-moon"
+
 
 #### Network Variables
 # Network Subnet - Should be a /24
-kvm_subnet = "172.200.0.0/24"
+kvm_subnet = "172.16.1.0/24"
 # Network Subnet Prefix - Should be the same as kvm_subnet first three octets
-kvm_subnet_prefix = "172.200.0"
-
+kvm_subnet_prefix = "172.16.1"
+cni_cilium = true
+# set a route network mode
+# network_mode = "route"
+network_mode = "nat"
+# network_mode = "bridge"
 #### VM Variables
 # How many VMs to create
 vm_count = 1
@@ -45,6 +50,6 @@ datavm_disk_size = 160
 
 #### Libvirt Variables
 # Ubuntu Cloud Image URL location
-image_url = "file:///var/lib/libvirt/images/debian-12-genericcloud-amd64-daily.qcow2"
+image_url = "file:///var/lib/libvirt/images/noble-server-cloudimg-amd64.img"
 # Auto start VMs on boot
 autostart = true

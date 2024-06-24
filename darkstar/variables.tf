@@ -36,11 +36,23 @@ variable "datavm_host_suffix" {
 
 variable "kvm_subnet" {
   type    = string
-  default = "172.16.0.0/24"
+  default = "172.16.20.0/24"
 }
 variable "kvm_subnet_prefix" {
   type    = string
-  default = "172.16.0"
+  default = "172.16.20"
+}
+variable "cni_cilium" {
+  type = bool
+  default = false
+}
+variable "cni_calico" {
+  type = bool
+  default = false
+}
+variable "network_mode" {
+  type = string
+  default = "nat"
 }
 
 #### VM Variables
@@ -107,7 +119,7 @@ variable "datavm_count" {
 variable "image_url" {
   description = "The URL of the image used to deploy the VMs"
   type        = string
-  default     = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img"
+  default     = "https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img"
 }
 variable "autostart" {
   description = "Whether to automatically start the VMs"
