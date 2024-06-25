@@ -6,6 +6,3 @@ spec:
   blocks:
   - start: "172.16.150.150"
     stop: "172.16.150.254"
-  serviceSelector:
-    matchLabels:
-      cilium-lb: "true"

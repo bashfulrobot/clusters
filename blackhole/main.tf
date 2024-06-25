@@ -4,7 +4,7 @@ module "network" {
 
   #### Network Variables
   kvm_subnet = var.kvm_subnet
-  # kvm_subnet_prefix = var.kvm_subnet_prefix
+  kvm_subnet_prefix = var.kvm_subnet_prefix
   network_name = var.cluster_name
   # kvm network mode
   network_mode = var.network_mode

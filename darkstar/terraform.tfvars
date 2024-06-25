@@ -27,8 +27,6 @@ network_mode = "route"
 # network_mode = "nat"
 # network_mode = "bridge"
 
-# NOTE - before building, you must allow this interface to be used in the host routing config.
-kvm_bridge = "virbr200"
 #### VM Variables
 # How many VMs to create
 vm_count = 1
