@@ -23,3 +23,11 @@ spec:
     - hosts:
       - lh-darkstar.srvrs.co
       secretName: lh-darkstar-srvrs-co-tls
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cilium-ingress-longhorn
+  namespace: longhorn-system
+  labels:
+    cilium-lb: "true"
