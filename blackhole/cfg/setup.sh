@@ -11,6 +11,7 @@ helm upgrade --install --namespace kube-system cilium cilium/cilium --version $l
 sleep 2
 bash ../apply-latest-cilium-api-gw-crd.sh
 kubectl apply -f cilium-balancerpool.yaml
+kubectl apply -f l2AnnoucementPolicy.yaml
 
 # Setup Cert Manager
 helm repo add jetstack https://charts.jetstack.io
