@@ -5,3 +5,6 @@ darkmoon/.terraform
 spitfire/.env
 darkstar/.env
 blackhole/.env
+blackhole/.envrc
+darkstar/.envrc
+spitfire/.envrc
