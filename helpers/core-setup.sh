@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 # Set k8sServiceHost dynamically. You can pass this as an argument to the script.
-subnetPrefix=$1
-clusterName=$2
+# subnetPrefix=$1
+# clusterName=$2
+
+# set in .envrc file
 
 ######################## ----- Setup the Cilium environment
 ################################################################
