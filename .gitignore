@@ -2,3 +2,6 @@ darkstar/.terraform
 spitfire/.terraform
 blackhole/.terraform
 darkmoon/.terraform
+spitfire/.env
+darkstar/.env
+blackhole/.env

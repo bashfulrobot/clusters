@@ -1,0 +1,6 @@
+ubuntu-24.04-minimal-cloudimg-amd64.img
+
+
+need to install:
+
+gpg
