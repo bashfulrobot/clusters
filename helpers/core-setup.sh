@@ -133,7 +133,7 @@ metadata:
   namespace: longhorn-system
 type: Opaque
 stringData:
-  api-token: npZvj8gGzz2hhyLRQJTFAYaveedKnHn-i1eeFg26
+  api-token: ${cfToken}
 EOF
 )
 

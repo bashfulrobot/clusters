@@ -2,9 +2,9 @@ darkstar/.terraform
 spitfire/.terraform
 blackhole/.terraform
 darkmoon/.terraform
-spitfire/.env
-darkstar/.env
-blackhole/.env
-blackhole/.envrc
-darkstar/.envrc
-spitfire/.envrc
+# spitfire/.env
+# darkstar/.env
+# blackhole/.env
+# blackhole/.envrc
+# darkstar/.envrc
+# spitfire/.envrc
